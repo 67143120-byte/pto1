@@ -1,0 +1,244 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "TH Sarabun New", "Segoe UI", sans-serif;
+  background-color: #f6f3ef;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #7c2d12, #b45309);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* ===== NAV ===== */
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 14px 30px;
+}
+
+/* LOGO */
+.header-left img {
+  height: 50px;
+}
+
+/* CENTER MENU */
+.header-center {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.header-center a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.header-center a:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #fde68a;
+}
+
+/* RIGHT MENU */
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-register,
+.btn-login {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* REGISTER */
+.btn-register {
+  background-color: #fde68a;
+  color: #7c2d12;
+}
+
+.btn-register:hover {
+  background-color: #fcd34d;
+}
+
+/* LOGIN */
+.btn-login {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #fff;
+  color: #7c2d12;
+}
+
+/* ===== CONTENT ===== */
+.container {
+  max-width: 900px;
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 45px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+/* TITLES */
+.container h1 {
+  font-size: 44px;
+  color: #7c2d12;
+  margin-bottom: 30px;
+}
+
+/* IMAGES */
+.container img {
+  max-width: 100%;
+  display: block;
+  margin: 25px auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+.container p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1f2933;
+  color: #e5e7eb;
+  padding: 35px 20px 20px;
+}
+
+.footer-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-section h4 {
+  font-size: 20px;
+  color: #fde68a;
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+  border-top: 1px solid #374151;
+  padding-top: 10px;
+}
+
+/* ===== MOBILE HEADER ===== */
+@media (max-width: 768px) {
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  /* LOGO */
+  .header-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .header-left img {
+    height: 45px;
+  }
+
+  /* MENU CENTER */
+  .header-center {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .header-center a {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+  /* RIGHT BUTTONS */
+  .header-right {
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .btn-register,
+  .btn-login {
+    font-size: 16px;
+    padding: 6px 14px;
+  }
+
+  /* CONTENT */
+  .container {
+    margin: 25px 12px;
+    padding: 22px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 17px;
+    text-align: left;
+  }
+
+  /* IMAGES */
+  .container img {
+    border-radius: 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+  }
+
+  .footer-section h4 {
+    font-size: 18px;
+  }
+
+}
